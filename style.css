@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    70deg,
+    rgb(10, 29, 201),
+    rgb(48, 66, 233),
+    rgb(66, 68, 173)
+  );
+  object-fit: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.caja {
+  background-color: black;
+  height: 200px;
+  width: 150px;
+  margin: 1rem;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.caja:hover {
+  transform: scale(1.1, 1.1);
+}
+.carrouseljuegos {
+  background-color: #3737cc;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  margin: 20px;
+}
+nav {
+  text-align: center;
+  height: 100px;
+}
+nav ul {
+  list-style: none;
+  display: inline-block;
+  padding: 18px;
+}
+nav ul li {
+  float: left;
+  margin-top: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+}
+nav ul li a:hover {
+  color: rgb(206, 205, 205);
+}
+footer {
+  background: linear-gradient(
+    70deg,
+    rgb(32, 32, 163),
+    rgb(50, 50, 211),
+    rgb(124, 124, 231)
+  );
+  text-align: center;
+}
+h1 {
+  margin: auto;
+  padding: 20px;
+}
+h2 {
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+}
+.imagen {
+  width: 100%;
+  object-fit: cover;
+}
+.introduccion {
+  padding: 115px;
+  margin: 30px;
+  transition: all 3s ease;
+}
+.texto1 {
+  margin-left: 25px;
+  font-size: 20px;
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .carrouseljuegos {
+    background-color: #3737cc;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    margin: 20px;
+    justify-items: center;
+  }
+}
